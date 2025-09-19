@@ -1,6 +1,6 @@
 <div align="center">
 
-# ColorMash 🎨
+# 🎨 ColorMash 🎨
 </div>
 
 <div align="center">
