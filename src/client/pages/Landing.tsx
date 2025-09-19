@@ -37,25 +37,26 @@ export const Landing = ({ onStartGame }: LandingProps) => {
 
       {showMenu && (
         <Overlay onClose={() => setShowMenu(false)}>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             <button
               onClick={() => {
                 setShowMenu(false);
                 onStartGame();
               }}
-              className="px-6 py-2 bg-white text-gray-900 border border-amber-400 rounded-md"
+              className="px-8 py-3 bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white border-2 border-white rounded-lg shadow-lg text-lg font-bold transform hover:scale-105 transition-all duration-200"
               style={{ fontFamily: 'Comic Sans MS, Comic Sans, Chalkboard SE, cursive' }}
             >
-              Play
+              🎮 Play Game
             </button>
             <button
               onClick={() => {
                 setShowMenu(false);
                 setShowRules(true);
               }}
-              className="px-6 py-2 bg-white text-gray-900 border border-amber-400 rounded-md"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-900 border-2 border-amber-400 rounded-lg hover:bg-gray-50 transition-all duration-200"
               style={{ fontFamily: 'Comic Sans MS, Comic Sans, Chalkboard SE, cursive' }}
             >
+              <img src="/Info.png" alt="Info" className="w-5 h-5" />
               Info / Rules
             </button>
           </div>

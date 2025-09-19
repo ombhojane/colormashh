@@ -29,10 +29,11 @@ export const AudioController = () => {
       <audio ref={audioRef} src="/BGAudio.mp3" />
       <button
         onClick={() => setMuted((m) => !m)}
-        className="fixed top-3 right-3 z-40 px-3 py-1 bg-white text-gray-900 border border-amber-400 rounded-md shadow"
+        className="fixed bottom-4 right-4 z-40 flex items-center gap-1 px-2 py-2 bg-white/90 backdrop-blur-sm text-gray-900 border border-amber-400 rounded-lg shadow-lg hover:bg-white transition-all duration-200"
         style={{ fontFamily: 'Comic Sans MS, Comic Sans, Chalkboard SE, cursive' }}
       >
-        {muted ? 'Unmute' : 'Mute'}
+        <img src="/Audio.png" alt="Audio" className="w-4 h-4" />
+        {muted ? '🔇' : '🔊'}
       </button>
     </>
   );
