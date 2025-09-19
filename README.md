@@ -1,4 +1,7 @@
+<div align="center">
+
 # ColorMash 🎨
+</div>
 
 <div align="center">
   <img src="src/client/public/Logo.png" alt="ColorMash Logo" width="300"/>
